@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+class Playlist {
+  
+  public static void main(String[] args) {
+    ArrayList<String> desertIslandPlaylist= new ArrayList<String>();
+    desertIslandPlaylist.add("Unforgettable by French Montanna");
+    desertIslandPlaylist.add("Aston Martin by Rick Ross");
+    desertIslandPlaylist.add("Exhale by Whitney Houston");
+    desertIslandPlaylist.add("Lucid Dreams by Juice Wurld");
+    desertIslandPlaylist.add("Better by Khalid");
+    desertIslandPlaylist.add("Psycho by PostMalone");
+    
+    System.out.println(desertIslandPlaylist);
+    System.out.println(desertIslandPlaylist.size());
+    desertIslandPlaylist.remove(1);
+    System.out.println(desertIslandPlaylist.size());
+    
+    String temp="Exhale by Whitney Houston";
+    desertIslandPlaylist.set(1,"Psycho by PostMalone");
+    System.out.println(desertIslandPlaylist);
+    desertIslandPlaylist.set(4,temp);
+     System.out.println(desertIslandPlaylist);
+    
+    System.out.println(desertIslandPlaylist.indexOf("Exhale by Whitney Houston"));
+    System.out.println(desertIslandPlaylist.indexOf("Psycho by PostMalone"));
+    
+    
+  }
+  }

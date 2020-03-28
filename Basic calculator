@@ -1,0 +1,40 @@
+public class Calculator{
+  // Constructor
+  public Calculator(){
+    
+    
+  }
+  //Method that adds
+  public int add(int a, int b){
+    int sum= a+b;
+    return sum;
+    
+  }
+  //Method that subtracts
+  public int subtract(int a, int b){
+    int sub=a-b;
+    return sub;
+  }
+  //Method that multiplies
+  public int multiply(int a, int b){
+    int mult=a*b;
+    return mult;
+  }
+  //Method that divides
+  public double divide(int a, int b){
+    double div=a/b;
+    return div;
+  }
+  //Modulo method
+  public int modulo(int a ,int b){
+    int mod=a%b;
+    return mod;
+  }
+  //Main method
+  public static void main(String[] args){
+    
+    Calculator myCalculator=new Calculator();
+    System.out.println(myCalculator.add(5,7));
+    System.out.println(myCalculator.subtract(45,11));
+  }
+}
